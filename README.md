@@ -10,7 +10,7 @@
 8. On the heroku dashboard for your app, go to the deploy tab, under deployment method choose GitHub. You may need to grant heroku permissions. 
 9. Search for the repository with the  <code>Dockerfile</code> and <code>heroku.yml</code> files to deploy. 
 10. Once the repository is found, click connect.
-11. At this point you can configure what brach you would like deploy, set auto-deployment options etc. Then click deplpy branch.
+11. At this point you can configure what brach you would like deploy, set auto-deployment options etc. Then click deploy branch.
 12. If there are any errors it will show up in the deployment logs.
 
 
