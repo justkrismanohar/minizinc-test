@@ -4,7 +4,10 @@
 2. Login with the Heroku CLI <code>heroku login</code>
 3. At the CLI set the app to run as a container <code>heroku stack:set container -a your-minizinc-app</code>
 4. Go the heroku dashboard for your app, go to settings verify the stack is set to container
-5. Configure the <code>Dockerfile</code> to software for the applicaiton. The sample <code>Dockerfile</code> builds from the minizinc/minizinc:latest-alpine. This image has minzinc installed on the alpine. Starting from there, python and the base application are installed.
+5. Configure the <code>Dockerfile</code> to software for the applicaiton. 
+    * The sample <code>Dockerfile</code> builds from the docker image minizinc/minizinc:latest. This image has minzinc installed on the Ubuntu.
+    * The sample <code>Dockerfile-alpine</code> builds from the docker image minizinc/minizinc:latest-alpine. This image has minzinc installed on the alpine. 
+    * Starting from there, python and the base application are installed.
 6. Confgiure the <code>heroku.yml</code> file. The sample <code>heroku.yml</code> builds web process based on the <code>Dockerfile</code>. Ensure <code>run</code> in <code>heroku.yml</code> is configured to start your application. 
 7. Push repository to GitHub.
 8. On the heroku dashboard for your app, go to the deploy tab, under deployment method choose GitHub. You may need to grant heroku permissions. 
